@@ -6,7 +6,7 @@ const Pokemon = (props) => {
     <div className="pokemonCard">
       <img src={props.img} alt={props.name} className="pokemonCard__img"></img>
       <h2 className="pokemonCard__name">{props.name}</h2>
-      <div>
+      <div className="pokemonCard__types">
         {props.types.map((type) => (
           <p key={type} className="pokemonCard__type">
             {type}

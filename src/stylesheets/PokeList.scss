@@ -1,4 +1,10 @@
 .pokemons {
-  display: flex;
-  flex-wrap: wrap;
+  &__heading {
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

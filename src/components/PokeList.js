@@ -4,9 +4,9 @@ import '../stylesheets/PokeList.scss';
 
 const PokeList = (props) => {
   return (
-    <>
-      <h1>Mi lista de Pokemon</h1>
-      <div class="pokemons">
+    <div className="pokemons">
+      <h1 className="pokemons__heading">Mi lista de Pokemon</h1>
+      <div className="pokemons__container">
         {props.pokemons.map((pokemon) => (
           <Pokemon
             key={pokemon.id}
@@ -16,7 +16,7 @@ const PokeList = (props) => {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
