@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PokeList from './PokeList';
-import '../stylesheets/App.css';
+import '../stylesheets/App.scss';
 import pokemonsData from '../data/pokemons.json';
 
 const App = () => {

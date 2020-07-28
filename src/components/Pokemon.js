@@ -1,14 +1,16 @@
 import React from 'react';
+import '../stylesheets/Pokemon.scss';
 
 const Pokemon = (props) => {
-  console.log(props.types);
   return (
-    <div>
-      <img src={props.img} alt={props.name}></img>
-      <h2>{props.name}</h2>
+    <div className="pokemonCard">
+      <img src={props.img} alt={props.name} className="pokemonCard__img"></img>
+      <h2 className="pokemonCard__name">{props.name}</h2>
       <div>
         {props.types.map((type) => (
-          <p className="pokemon__type">{type}</p>
+          <p key={type} className="pokemonCard__type">
+            {type}
+          </p>
         ))}
       </div>
     </div>
