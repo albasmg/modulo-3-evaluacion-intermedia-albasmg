@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PokeList from './PokeList';
 import '../stylesheets/App.css';
+import pokemonsData from '../data/pokemons.json';
 
-function App() {
-  return <div>Hello</div>;
-}
+const App = () => {
+  const [pokemons] = useState(pokemonsData);
+
+  return <PokeList pokemons={pokemons} />;
+};
 
 export default App;
