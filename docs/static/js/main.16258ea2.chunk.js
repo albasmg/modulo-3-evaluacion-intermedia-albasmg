@@ -1,2 +1,0 @@
-(this["webpackJsonpev-modulo-03"]=this["webpackJsonpev-modulo-03"]||[]).push([[0],[,,,function(e,n,t){e.exports=t(10)},,,,,function(e,n,t){},function(e,n,t){},function(e,n,t){"use strict";t.r(n);var o=t(0),l=t.n(o),r=t(2),u=t.n(r);t(8),t(9);var c=function(){return l.a.createElement("div",null,"Hello")};u.a.render(l.a.createElement(l.a.StrictMode,null,l.a.createElement(c,null)),document.getElementById("root"))}],[[3,1,2]]]);
-//# sourceMappingURL=main.16258ea2.chunk.js.map
