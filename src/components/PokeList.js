@@ -1,6 +1,7 @@
 import React from 'react';
 import Pokemon from './Pokemon';
 import '../stylesheets/PokeList.scss';
+import PropTypes from 'prop-types';
 
 const PokeList = (props) => {
   return (
@@ -18,6 +19,10 @@ const PokeList = (props) => {
       </div>
     </div>
   );
+};
+
+PokeList.propTypes = {
+  pokemons: PropTypes.array.isRequired,
 };
 
 export default PokeList;
