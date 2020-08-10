@@ -5,19 +5,21 @@ import PropTypes from 'prop-types';
 
 const PokeList = (props) => {
   return (
-    <div className="pokemons">
+    <ul className="pokemons">
       <h1 className="pokemons__heading">Mi lista de Pokemon</h1>
       <div className="pokemons__container">
         {props.pokemons.map((pokemon) => (
-          <Pokemon
-            key={pokemon.id}
-            img={pokemon.url}
-            name={pokemon.name}
-            types={pokemon.types}
-          />
+          <li className="pokemonCard">
+            <Pokemon
+              key={pokemon.id}
+              img={pokemon.url}
+              name={pokemon.name}
+              types={pokemon.types}
+            />
+          </li>
         ))}
       </div>
-    </div>
+    </ul>
   );
 };
 

@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 150px;
-  border: 1px solid grey;
+  background-color: lightblue;
   border-radius: 8px;
   margin: 20px;
 
@@ -17,6 +17,7 @@
 
   &__types {
     display: flex;
+    padding: 0px;
   }
 
   &__type {

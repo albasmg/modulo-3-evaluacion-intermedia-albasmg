@@ -4,17 +4,17 @@ import PropTypes from 'prop-types';
 
 const Pokemon = (props) => {
   return (
-    <div className="pokemonCard">
+    <li className="pokemonCard">
       <img src={props.img} alt={props.name} className="pokemonCard__img"></img>
       <h2 className="pokemonCard__name">{props.name}</h2>
-      <div className="pokemonCard__types">
+      <ul className="pokemonCard__types">
         {props.types.map((type) => (
-          <p key={type} className="pokemonCard__type">
+          <li key={type} className="pokemonCard__type">
             {type}
-          </p>
+          </li>
         ))}
-      </div>
-    </div>
+      </ul>
+    </li>
   );
 };
 
